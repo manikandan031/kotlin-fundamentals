@@ -20,3 +20,22 @@ java -jar hello.jar // run the kotlin code
   - functions are first class things in the language
 - less ceremony or less code for a java equivalent
 
+## kotlin classes
+- by default class and methods are public
+- constructor is defined along with the class name
+- no `new` keyword while creating objects
+- use `val` for constants and `var` for variables
+
+## kotlin lambda function
+```
+fun displayWithLambda(func: (s: String) -> Unit) {
+    func(name)
+}
+
+person.displayWithLambda(::myFunc)
+
+fun myFunc(s: String) {
+  print(s)
+}
+
+```
