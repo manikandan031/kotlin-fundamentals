@@ -39,3 +39,19 @@ fun myFunc(s: String) {
 }
 
 ```
+## string templates
+- kotlin support string templates
+```
+println("Answer is ${answer}")
+```
+- strings can be compared using `==`
+
+## if as an expression
+- in kotlin `if` can be treated as an expression and  the return value can be assigned to a variable
+```
+var message = if (a == '2') {
+  "Equal"
+} else {
+  "Not Equal"
+} 
+```
